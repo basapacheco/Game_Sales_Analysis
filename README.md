@@ -54,9 +54,6 @@ from sklearn.neighbors import KNeighborsRegressor
 5. **Manejo de Valores Atípicos**
 6. **División de Datos (Entrenamiento | Prueba)**
 7. **Modelado**
-    - Regresión Ridge
-    - Regresión Lineal
-    - K-Vecinos Más Cercanos (KNN)
 
 ## Conclusiones
 
