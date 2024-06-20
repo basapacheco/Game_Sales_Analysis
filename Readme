@@ -1,10 +1,13 @@
-#Video Games Sales Dataset Analysis
+
+# Video Games Sales Dataset Analysis
+
+
 
 ## Description
 
 This dataset contains a list of video games with sales greater than 100,000 copies, scraped from vgchartz.com.
 
-### Matrix Column Entries (Attributes)
+### Attributes
 
 - **Rank**: Ranking of overall sales.
 - **Name**: The game's name.
@@ -42,27 +45,39 @@ from sklearn.linear_model import Ridge, LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neighbors import KNeighborsRegressor
-Phases of Analysis
+```
 
-Preview Data
-Check for Duplicates
-Data Preprocessing
-Exploratory Data Analysis (EDA)
-Dealing with Outliers
-Train | Test Split
-Modeling
-Ridge Regression
-Linear Regression
-K-Nearest Neighbors (KNN)
-Conclusion
-Key Findings
+## Phases of Analysis
 
-Most games were produced for the DS platform, followed by PS2.
-Action and Sports are the most popular genres; Puzzle is the least popular.
-The top publisher is Electronic Arts.
-Most games were produced between 2002 and 2016, peaking around 2010.
-Action games are the most frequently published type.
-Sales peaked between 2005 and 2010, with lower sales in the 1980s and 1990s.
-Conclusion
+### 1. Preview Data
 
-The best performing models were Ridge Regression and Linear Regression.
+### 2. Check for Duplicates
+
+### 3. Data Preprocessing
+
+### 4. Exploratory Data Analysis (EDA)
+
+### 5. Dealing with Outliers
+
+### 6. Train | Test Split
+
+### 7. Modeling
+
+- **Ridge Regression**
+- **Linear Regression**
+- **K-Nearest Neighbors (KNN)**
+
+## Conclusion
+
+### Key Findings
+
+1. Most games were produced for the DS platform, followed by PS2.
+2. Action and Sports are the most popular genres; Puzzle is the least popular.
+3. The top publisher is Electronic Arts.
+4. Most games were produced between 2002 and 2016, peaking around 2010.
+5. Action games are the most frequently published type.
+6. Sales peaked between 2005 and 2010, with lower sales in the 1980s and 1990s.
+
+### Best Models
+
+The best performing models were Ridge Regression and Linear Regression
