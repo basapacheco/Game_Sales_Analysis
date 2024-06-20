@@ -1,1 +1,73 @@
-Video Game Sale Analysis
+### Video Games Sales Dataset
+
+
+This dataset comprises a list of video games with sales exceeding 100,000 copies, sourced from vgchartz.com. It includes various attributes for each game to analyze trends and patterns in the video game industry.
+
+#### Matrix Column Entries (Attributes):
+
+- **Rank**: Overall sales ranking of the game.
+- **Name**: Name of the game.
+- **Platform**: Platform on which the game was released (e.g., PC, PS4).
+- **Year**: Year when the game was released.
+- **Genre**: Genre of the game.
+- **Publisher**: Publisher of the game.
+- **NA_Sales**: Sales in North America (in millions).
+- **EU_Sales**: Sales in Europe (in millions).
+- **JP_Sales**: Sales in Japan (in millions).
+- **Other_Sales**: Sales in the rest of the world (in millions).
+- **Global_Sales**: Total worldwide sales (in millions).
+
+#### Libraries Used
+
+```python
+import os               # Paths to files
+import numpy as np      # Linear algebra
+import pandas as pd     # Data processing
+import warnings         # Warning filter
+
+# Plotting libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.graph_objects as go
+
+# Machine learning libraries
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, r2_score
+from sklearn.linear_model import Ridge, LinearRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.neighbors import KNeighborsRegressor
+```
+
+#### Phases of Analysis
+
+1. **Preview Data**: Initial exploration of the dataset.
+2. **Check Duplication**: Ensure there are no duplicate entries.
+3. **Data Preprocessing**: Handle missing values and format data for analysis.
+4. **Exploratory Data Analysis (EDA)**: Visualize relationships and distributions in the data.
+5. **Dealing with Outliers**: Address any outliers that might affect the analysis.
+6. **Train | Test**: Splitting data into training and testing sets.
+7. **Modeling**: Building and evaluating predictive models.
+
+#### Key Findings
+
+1. **Most Popular Gaming Platforms**: Nintendo DS and PlayStation 2 (PS2) are the leading platforms.
+   
+2. **Popular Game Genres**: Action and Sports games dominate, while Puzzle games are less common.
+
+3. **Top Publishers**: Electronic Arts emerges as the top publisher in terms of game count.
+
+4. **Game Release Trends**: Peak game production occurred between 2002 and 2016, particularly around 2010.
+
+5. **Dominant Genre**: Action games are consistently the most published genre.
+
+6. **Sales Trends**: Most sales were recorded between 2005 and 2010, with minimal sales noted in the 1980s and 1990s.
+
+#### Best Performing Models
+
+- **Ridge Regression** and **Linear Regression** are identified as the top models for predicting sales trends in the dataset.
+
+### Conclusion
+
+Thank you for exploring this summary of the video game sales dataset. These insights provide a comprehensive view of the trends and patterns in the video game industry based on global sales data.
