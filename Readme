@@ -1,82 +1,88 @@
-# Video Games Sales Dataset Analysis
+Entiendo, parece que estás viendo los caracteres Markdown en lugar de que se aplique el formato visual adecuado en GitHub. Esto puede suceder si no estás utilizando el formato Markdown correctamente o si GitHub no está interpretando el archivo correctamente.
 
+A continuación, te proporciono el contenido del `README.md` sin los caracteres Markdown (como asteriscos y almohadillas) para que puedas copiar y pegar directamente en tu repositorio:
 
+```markdown
+# Análisis de Dataset de Ventas de Videojuegos
 
-## Description
+## Descripción
 
-This dataset contains a list of video games with sales greater than 100,000 copies, scraped from vgchartz.com.
+Este dataset contiene una lista de videojuegos con ventas superiores a 100,000 copias, obtenidos mediante scraping de vgchartz.com.
 
-### Attributes
+### Atributos
 
-- **Rank**: Ranking of overall sales.
-- **Name**: The game's name.
-- **Platform**: Platform of the game's release (e.g., PC, PS4, etc.).
-- **Year**: Year of the game's release.
-- **Genre**: Genre of the game.
-- **Publisher**: Publisher of the game.
-- **NA_Sales**: Sales in North America (in millions).
-- **EU_Sales**: Sales in Europe (in millions).
-- **JP_Sales**: Sales in Japan (in millions).
-- **Other_Sales**: Sales in the rest of the world (in millions).
-- **Global_Sales**: Total worldwide sales.
+- **Ranking**: Ranking de ventas totales.
+- **Nombre**: Nombre del videojuego.
+- **Plataforma**: Plataforma de lanzamiento del juego (por ejemplo, PC, PS4, etc.).
+- **Año**: Año de lanzamiento del juego.
+- **Género**: Género del juego.
+- **Editora**: Editorial del juego.
+- **Ventas NA**: Ventas en América del Norte (en millones).
+- **Ventas EU**: Ventas en Europa (en millones).
+- **Ventas JP**: Ventas en Japón (en millones).
+- **Otras Ventas**: Ventas en el resto del mundo (en millones).
+- **Ventas Globales**: Ventas totales en todo el mundo.
 
-## Libraries Used
+## Bibliotecas Utilizadas
 
 ```python
-import os  # paths to file
-import numpy as np  # linear algebra
-import pandas as pd  # data processing
-import warnings  # warning filter
+import os  # para manejo de rutas de archivo
+import numpy as np  # álgebra lineal
+import pandas as pd  # procesamiento de datos
+import warnings  # filtros de advertencia
 
-# Plotting libraries
+# Bibliotecas de visualización
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.graph_objects as go
 
-# Machine Learning libraries
+# Bibliotecas de Machine Learning
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, r2_score
 from sklearn.model_selection import cross_val_score
 
-# Machine Learning models
+# Modelos de Machine Learning
 from sklearn.linear_model import Ridge, LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.neighbors import KNeighborsRegressor
 ```
 
-## Phases of Analysis
+## Fases del Análisis
 
-### 1. Preview Data
+### 1. Vista Previa de los Datos
 
-### 2. Check for Duplicates
+### 2. Detección de Duplicados
 
-### 3. Data Preprocessing
+### 3. Preprocesamiento de Datos
 
-### 4. Exploratory Data Analysis (EDA)
+### 4. Análisis Exploratorio de Datos (EDA)
 
-### 5. Dealing with Outliers
+### 5. Manejo de Valores Atípicos
 
-### 6. Train | Test Split
+### 6. División de Datos (Entrenamiento | Prueba)
 
-### 7. Modeling
+### 7. Modelado
 
-- **Ridge Regression**
-- **Linear Regression**
-- **K-Nearest Neighbors (KNN)**
+- Regresión Ridge
+- Regresión Lineal
+- K-Vecinos Más Cercanos (KNN)
 
-## Conclusion
+## Conclusiones
 
-### Key Findings
+### Hallazgos Clave
 
-1. Most games were produced for the DS platform, followed by PS2.
-2. Action and Sports are the most popular genres; Puzzle is the least popular.
-3. The top publisher is Electronic Arts.
-4. Most games were produced between 2002 and 2016, peaking around 2010.
-5. Action games are the most frequently published type.
-6. Sales peaked between 2005 and 2010, with lower sales in the 1980s and 1990s.
+1. La mayoría de los juegos se produjeron para la plataforma DS, seguida por PS2.
+2. Los géneros más populares son Acción y Deportes; Puzzle es el menos popular.
+3. La editora más destacada es Electronic Arts.
+4. La mayoría de los juegos se produjeron entre 2002 y 2016, con un pico alrededor de 2010.
+5. Los juegos de Acción son los más frecuentemente publicados.
+6. Las ventas alcanzaron su punto máximo entre 2005 y 2010, con ventas más bajas en los años 1980 y 1990.
 
-### Best Models
+### Mejores Modelos
 
-The best performing models were Ridge Regression and Linear Regression
+Los modelos que mejor rendimiento mostraron fueron la Regresión Ridge y la Regresión Lineal.
+```
+
+Este texto ya está libre de caracteres Markdown visibles y debería mostrarse correctamente en GitHub una vez que lo subas a tu repositorio. Simplemente copia y pega este contenido en tu archivo `README.md`.
